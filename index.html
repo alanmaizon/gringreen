@@ -1,114 +1,111 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BAMBU – Eco-Friendly Oral Care</title>
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+
+    <!-- Fonts -->
     <link
       rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Noto+Sans:wght@400;700&display=swap"
     />
-
-    <title>Stitch Design</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+      body {
+        font-family: 'Lexend', 'Noto Sans', sans-serif;
+      }
+    </style>
   </head>
-  <body>
-    <div
-      class="relative flex size-full min-h-screen flex-col bg-[#fafbf9] justify-between group/design-root overflow-x-hidden"
-      style='font-family: Lexend, "Noto Sans", sans-serif;'
-    >
-      <div>
-        <div class="flex items-center bg-[#fafbf9] p-4 pb-2 justify-between">
-          <h2 class="text-[#131712] text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">BAMBU</h2>
-          <div class="flex w-12 items-center justify-end">
-            <button
-              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent text-[#131712] gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
-            >
-              <div class="text-[#131712]" data-icon="ShoppingCart" data-size="24px" data-weight="regular">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                  <path
-                    d="M222.14,58.87A8,8,0,0,0,216,56H54.68L49.79,29.14A16,16,0,0,0,34.05,16H16a8,8,0,0,0,0,16h18L59.56,172.29a24,24,0,0,0,5.33,11.27,28,28,0,1,0,44.4,8.44h45.42A27.75,27.75,0,0,0,152,204a28,28,0,1,0,28-28H83.17a8,8,0,0,1-7.87-6.57L72.13,152h116a24,24,0,0,0,23.61-19.71l12.16-66.86A8,8,0,0,0,222.14,58.87ZM96,204a12,12,0,1,1-12-12A12,12,0,0,1,96,204Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,192,204Zm4-74.57A8,8,0,0,1,188.1,136H69.22L57.59,72H206.41Z"
-                  ></path>
-                </svg>
-              </div>
-            </button>
+  <body class="bg-[#fafbf9] text-[#131712]">
+    <!-- Header -->
+    <header class="flex justify-between items-center p-4 border-b border-gray-200">
+      <h1 class="text-2xl font-bold tracking-tight">BAMBU</h1>
+      <button class="text-[#131712]">
+        <!-- Simple Cart Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 256 256">
+          <path d="M222.14,58.87A8,8,0,0,0,216,56H54.68L49.79,29.14A16,16,0,0,0,34.05,16H16a8,8,0,0,0,0,16h18L59.56,172.29a24,24,0,0,0,5.33,11.27,28,28,0,1,0,44.4,8.44h45.42A27.75,27.75,0,0,0,152,204a28,28,0,1,0,28-28H83.17a8,8,0,0,1-7.87-6.57L72.13,152h116a24,24,0,0,0,23.61-19.71l12.16-66.86A8,8,0,0,0,222.14,58.87Z" />
+        </svg>
+      </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="px-4 py-6 text-center">
+      <h2 class="text-xl font-bold mb-2">Our Story</h2>
+      <p class="text-base">
+        At <strong>BAMBU</strong>, we believe in a healthier planet and a brighter smile. Our eco-friendly oral care products are crafted from sustainable materials and designed for a conscious lifestyle.
+      </p>
+    </section>
+
+    <!-- Key Messages -->
+    <section class="px-4 py-6 bg-white">
+      <h2 class="text-xl font-bold mb-4">Why Choose BAMBU?</h2>
+      <ul class="space-y-3">
+        <li class="flex items-start gap-2">
+          ✅ <span>Biodegradable bamboo handles to reduce plastic waste.</span>
+        </li>
+        <li class="flex items-start gap-2">
+          ✅ <span>Minimalist and recyclable packaging.</span>
+        </li>
+        <li class="flex items-start gap-2">
+          ✅ <span>Safe and gentle for daily brushing.</span>
+        </li>
+        <li class="flex items-start gap-2">
+          ✅ <span>Perfect for eco-conscious families and individuals.</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="px-4 py-6">
+      <h2 class="text-xl font-bold mb-4">Our Products</h2>
+      <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Product 1 -->
+        <div class="bg-[#f0f2ec] rounded-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3ZSeT_0Y8RIUIqBFyr_DN_7TUX8qksZGCSIWLjktWNbS8HqsqN2zeXFZLmmgAX5HW0inZDjM0Qpy4N8KDx7Ms2CiWtG8mrTnP8tM3B8gSZzUuD5sXMGKZ8a6MLZgKwAWQzHYdsZLkAu_5idLcP_60M5o5c_Rd8mV88Sf0ksxzidzMiHbrBA_9dIkb5f5MASz8m0j83ruB9SfeUW0KKyEl9wbuiVtucz_sFmdZAsMfoZXJnRMyju72vZt10yOfwlniHTPO-HDiojBx"
+            alt="Bamboo Toothbrush"
+          />
+          <div class="p-3">
+            <h3 class="font-medium text-lg">Bamboo Toothbrush</h3>
+            <p class="text-sm text-[#6a8363]">Sustainable and stylish</p>
           </div>
         </div>
-        <h2 class="text-[#131712] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Our Story</h2>
-        <p class="text-[#131712] text-base font-normal leading-normal pb-3 pt-1 px-4">
-          At BAMBU, we believe in a healthier planet and a brighter smile. Our eco-friendly oral care products are crafted with sustainable materials and designed for a conscious
-          lifestyle. Join us in making a difference, one brush at a time.
-        </p>
-        <h2 class="text-[#131712] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Our Products</h2>
-        <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-          <div class="flex flex-col gap-3 pb-3">
-            <div
-              class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
-              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB3ZSeT_0Y8RIUIqBFyr_DN_7TUX8qksZGCSIWLjktWNbS8HqsqN2zeXFZLmmgAX5HW0inZDjM0Qpy4N8KDx7Ms2CiWtG8mrTnP8tM3B8gSZzUuD5sXMGKZ8a6MLZgKwAWQzHYdsZLkAu_5idLcP_60M5o5c_Rd8mV88Sf0ksxzidzMiHbrBA_9dIkb5f5MASz8m0j83ruB9SfeUW0KKyEl9wbuiVtucz_sFmdZAsMfoZXJnRMyju72vZt10yOfwlniHTPO-HDiojBx");'
-            ></div>
-            <div>
-              <p class="text-[#131712] text-base font-medium leading-normal">Bamboo Toothbrush</p>
-              <p class="text-[#6a8363] text-sm font-normal leading-normal">Sustainable and stylish</p>
-            </div>
+
+        <!-- Product 2 -->
+        <div class="bg-[#f0f2ec] rounded-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGGdSOFrH1PlCbRqJVbWERprtYYok2D71t01lju6DrHew08LO66qDAatyEFeXfUHBBly6Cvfwzuc9jw-BdEuu7sMHdEqLT6kdusqEtgcAH54mLWJLwXJKfF3cQZTUurcuP8_8hVa2m3okl5R4DaBUUYm9WyMbK6DCH_8sfa1mBnkjfVCKHuvOKxJBz1cxs4g36eMd43dfaT_kEuk0Wt9KJDRjzRspkqHfw_rb46VZbXeKjgYtiDGw19_POS_wtTb33P306e8flMUF2"
+            alt="Natural Toothpaste"
+          />
+          <div class="p-3">
+            <h3 class="font-medium text-lg">Natural Toothpaste</h3>
+            <p class="text-sm text-[#6a8363]">Fluoride-free and effective</p>
           </div>
-          <div class="flex flex-col gap-3 pb-3">
-            <div
-              class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
-              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCGGdSOFrH1PlCbRqJVbWERprtYYok2D71t01lju6DrHew08LO66qDAatyEFeXfUHBBly6Cvfwzuc9jw-BdEuu7sMHdEqLT6kdusqEtgcAH54mLWJLwXJKfF3cQZTUurcuP8_8hVa2m3okl5R4DaBUUYm9WyMbK6DCH_8sfa1mBnkjfVCKHuvOKxJBz1cxs4g36eMd43dfaT_kEuk0Wt9KJDRjzRspkqHfw_rb46VZbXeKjgYtiDGw19_POS_wtTb33P306e8flMUF2");'
-            ></div>
-            <div>
-              <p class="text-[#131712] text-base font-medium leading-normal">Natural Toothpaste</p>
-              <p class="text-[#6a8363] text-sm font-normal leading-normal">Fluoride-free and effective</p>
-            </div>
-          </div>
-          <div class="flex flex-col gap-3 pb-3">
-            <div
-              class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
-              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBgFZuDn2DYWfksw4fw3KDYL_uPJJSWt33lCCUVua6P2H_MVsW3K2OeARQ-mTrBt-3vHS-c5tDWQVcrwD4fnGCGLFiUR1VMdD7v_s4Blw_yfL9i-fVjfU74EuGFv_P_kTplgDOYdrH8WWKMcQJXeFQmF-a9nmeobWi1FueFR3qGC0OPe_-I29Fr5xtqazDs20mH6LnCJ_9uEfH2yUxAox6iSZTXDfd456nVbaZjxUZNxFq-hEvsTDtYaSgNNf5Ai5GCoNoncJUGLrBp");'
-            ></div>
-            <div>
-              <p class="text-[#131712] text-base font-medium leading-normal">Eco-Floss</p>
-              <p class="text-[#6a8363] text-sm font-normal leading-normal">Biodegradable and gentle</p>
-            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="bg-[#f0f2ec] rounded-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgFZuDn2DYWfksw4fw3KDYL_uPJJSWt33lCCUVua6P2H_MVsW3K2OeARQ-mTrBt-3vHS-c5tDWQVcrwD4fnGCGLFiUR1VMdD7v_s4Blw_yfL9i-fVjfU74EuGFv_P_kTplgDOYdrH8WWKMcQJXeFQmF-a9nmeobWi1FueFR3qGC0OPe_-I29Fr5xtqazDs20mH6LnCJ_9uEfH2yUxAox6iSZTXDfd456nVbaZjxUZNxFq-hEvsTDtYaSgNNf5Ai5GCoNoncJUGLrBp"
+            alt="Eco Floss"
+          />
+          <div class="p-3">
+            <h3 class="font-medium text-lg">Eco-Floss</h3>
+            <p class="text-sm text-[#6a8363]">Biodegradable and gentle</p>
           </div>
         </div>
       </div>
-      <div>
-        <div class="flex gap-2 border-t border-[#ecf0eb] bg-[#fafbf9] px-4 pb-3 pt-2">
-          <a class="just flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-[#131712]" href="#">
-            <div class="text-[#131712] flex h-8 items-center justify-center" data-icon="House" data-size="24px" data-weight="fill">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                <path
-                  d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"
-                ></path>
-              </svg>
-            </div>
-            <p class="text-[#131712] text-xs font-medium leading-normal tracking-[0.015em]">Home</p>
-          </a>
-          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#6a8363]" href="#">
-            <div class="text-[#6a8363] flex h-8 items-center justify-center" data-icon="ShoppingBag" data-size="24px" data-weight="regular">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                <path
-                  d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM176,88a48,48,0,0,1-96,0,8,8,0,0,1,16,0,32,32,0,0,0,64,0,8,8,0,0,1,16,0Z"
-                ></path>
-              </svg>
-            </div>
-            <p class="text-[#6a8363] text-xs font-medium leading-normal tracking-[0.015em]">Shop</p>
-          </a>
-          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#6a8363]" href="#">
-            <div class="text-[#6a8363] flex h-8 items-center justify-center" data-icon="User" data-size="24px" data-weight="regular">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                <path
-                  d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"
-                ></path>
-              </svg>
-            </div>
-            <p class="text-[#6a8363] text-xs font-medium leading-normal tracking-[0.015em]">Account</p>
-          </a>
-        </div>
-        <div class="h-5 bg-[#fafbf9]"></div>
-      </div>
-    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-sm py-6 border-t border-gray-200 text-[#6a8363]">
+      &copy; 2025 BAMBU – All rights reserved.
+    </footer>
   </body>
 </html>
